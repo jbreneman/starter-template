@@ -33,17 +33,7 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    },
-    postcss: [
-      /*
-      ** Stop postcss from messing with css custom properties
-      */
-      require('postcss-cssnext')({
-        features: {
-          customProperties: false
-        }
-      })
-    ]
+    }
   },
   plugins: [
     { src: `~plugins/vue-portal` }
