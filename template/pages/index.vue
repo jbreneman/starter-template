@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import AppLogo from '~/components/ComponentTemplate.vue'
+import ComponentTemplate from '~/components/ComponentTemplate.vue'
 
 export default {
 	components: {
