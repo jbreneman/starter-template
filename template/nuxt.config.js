@@ -16,7 +16,7 @@ module.exports = {
   /*
   ** Customize the progress bar color
   */
-  loading: { color: '#3B8070' },
+  loading: false,
   /*
   ** Build configuration
   */
@@ -33,7 +33,31 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    }
-  }
+    },
+    postcss: [
+      /*
+      ** Stop postcss from messing with css custom properties
+      */
+      require('postcss-cssnext')({
+        features: {
+          customProperties: false
+        }
+      })
+    ]
+  },
+  plugins: [
+    { src: `~plugins/vue-portal` }
+  ],
+  modules: [
+    /*
+    ** Make scss variables accessible in SFCs
+    */
+    ['nuxt-sass-resources-loader',
+      [
+        '@/assets/css/base/_vars.scss',
+        '@/assets/css/base/_mixins.scss'
+      ]
+    ]
+  ]
 }
 
