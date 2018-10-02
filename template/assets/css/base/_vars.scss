@@ -1,0 +1,50 @@
+//
+// Fonts
+//
+
+//
+// Widths
+//
+$max-site-width: 1440px;
+
+//
+// Breakpoints
+//
+$break-xl: 1200px;
+$break--lg: 960px;
+$break--med: 680px;
+$break--sm: 420px;
+
+//
+// Colors
+//
+$primary: #9F0129;
+
+$secondary--light: rgb(142, 209, 230);
+$secondary: #47B3D5;
+$secondary--dark: rgb(29, 120, 148);
+
+$light--light: white;
+$light: #f5f5f5;
+$light--dark: #e6e6e6;
+
+$medium: #8B8E94;
+
+$dark--light: #525252; 
+$dark: #1C1D1F;
+$dark--primary: #231e3d;
+$dark--dark: black;
+
+//
+// Easings
+//
+$easing--quick: .12s ease-out;
+$easing--regular: .24s ease-out;
+$easing--slow: .36s ease-out;
+
+//
+// Padding
+//
+
+$padding--small: 1.25rem;
+$padding--medium: 2rem;
