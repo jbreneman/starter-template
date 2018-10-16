@@ -14,6 +14,12 @@ module.exports = {
     ]
   },
   /*
+  ** Load main css file
+  */
+  css: [
+    '@/assets/css/main.scss'
+  ],
+  /*
   ** Customize the progress bar color
   */
   loading: false,
